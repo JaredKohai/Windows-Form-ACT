@@ -40,16 +40,16 @@ namespace Tarea
             if (double.TryParse(txtAltura.Text, out double altura) &&
                 double.TryParse(txtBase.Text, out double bases))
             {
-                // Crea una instancia de Rectangulo
+                
                 Rectangulo oRectangulo = new Rectangulo();
                 oRectangulo.Altura = altura;
                 oRectangulo.Bases = bases;
 
-                // Calcula el área y el perímetro del rectángulo
+                
                 double area = oRectangulo.area();
                 double perimetro = oRectangulo.perimetro();
 
-                // Actualiza las etiquetas con los resultados
+                //JAREDBASTARRACHEA
                 lblRArea.Text = "Área: " + area.ToString("F2");
                 lblRPerimetro.Text = "Perímetro: " + perimetro.ToString("F2");
             }
@@ -164,3 +164,4 @@ namespace Tarea
         }
     }
 }
+
