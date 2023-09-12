@@ -2,6 +2,7 @@
 
 namespace Tarea
 {
+    //Herencia:
     //La clase Triangulo hereda de la clase base Figura. 
     //Esto representa el concepto de herencia, donde Triangulo adquiere las propiedades y métodos de la clase base
     //y los puede modificar según sus necesidades específicas.
