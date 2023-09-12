@@ -24,6 +24,8 @@ namespace Tarea
         {
             if (double.TryParse(txtRadio.Text, out double radio))
             {
+                // Polimorfismo:
+                // - Uso de la clase base Figura y la creación de una instancia de la clase derivada Circulo.
                 Circulo oCirculo = new Circulo();
                 oCirculo.Radio = Convert.ToDouble(txtRadio.Text.Trim());
 
@@ -32,11 +34,14 @@ namespace Tarea
             }
             else
             {
+                // Encapsulamiento:
+                // - Uso de MessageBox para mostrar un mensaje de error en caso de entrada incorrecta.
                 MessageBox.Show("Ingrese un valor válido para el radio del círculo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void btnRCalcular_Click(object sender, EventArgs e)
         {
+        // - Uso de la clase base Figura y la creación de una instancia de la clase derivada Rectangulo
             if (double.TryParse(txtAltura.Text, out double altura) &&
                 double.TryParse(txtBase.Text, out double bases))
             {
@@ -61,6 +66,7 @@ namespace Tarea
 
         private void btnTCalcular_Click(object sender, EventArgs e)
         {
+        // - Uso de la clase base Figura y la creación de una instancia de la clase derivada Triangulo
             if (double.TryParse(txtBase.Text, out double baseTriangulo) &&
                 double.TryParse(txtAltura.Text, out double altura) &&
                 double.TryParse(txtLado1.Text, out double lado1) &&
@@ -89,6 +95,7 @@ namespace Tarea
 
         private void btnCUCalcular_Click(object sender, EventArgs e)
         {
+        // - Uso de la clase base Figura y la creación de una instancia de la clase derivada Cuadrado.
             if (double.TryParse(txtLado.Text, out double ladoCuadrado))
             {
                 Cuadrado oCuadrado = new Cuadrado();
@@ -137,6 +144,8 @@ namespace Tarea
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            // Encapsulamiento:
+            // - Establecer el valor de la propiedad AccessibleName para botones.
             button1.AccessibleName = "btnCuadrado";
             button2.AccessibleName = "btnRectangulo";
             button3.AccessibleName = "btnTriangulo";
